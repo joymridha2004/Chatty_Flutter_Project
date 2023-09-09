@@ -7,7 +7,7 @@ import 'package:chatty/pages/welcome/index.dart';
 import 'package:chatty/pages/sign_in/index.dart';
 import 'package:chatty/pages/application/index.dart';
 import 'package:chatty/pages/contact/index.dart';
-import 'package:chatty/pages/chat/index.dart';
+import 'package:chatty/pages/message/chat/index.dart';
 
 import 'routes.dart';
 
