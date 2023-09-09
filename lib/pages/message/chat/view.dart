@@ -79,16 +79,16 @@ class ChatPage extends GetView<ChatController> {
                                 color: AppColors.primaryBackground,
                                 fontSize: 16.sp),
                           ),
-                          Text(
-                            "unknown locations",
-                            overflow: TextOverflow.clip,
-                            maxLines: 1,
-                            style: TextStyle(
-                                fontFamily: 'Avenir',
-                                fontWeight: FontWeight.normal,
-                                color: AppColors.primaryBackground,
-                                fontSize: 14.sp),
-                          )
+                          Obx(() => Text(
+                                controller.state.to_location.value,
+                                overflow: TextOverflow.clip,
+                                maxLines: 1,
+                                style: TextStyle(
+                                    fontFamily: 'Avenir',
+                                    fontWeight: FontWeight.normal,
+                                    color: AppColors.primaryBackground,
+                                    fontSize: 14.sp),
+                              ))
                         ],
                       ),
                     ),
@@ -112,7 +112,10 @@ class ChatPage extends GetView<ChatController> {
               ListTile(
                 leading: Icon(Icons.photo_library),
                 title: Text("Gallery"),
-                onTap: () {},
+                onTap: () {
+                  controller.imgFromGallery();
+                  Get.back();
+                },
               ),
               ListTile(
                 leading: Icon(Icons.photo_camera),

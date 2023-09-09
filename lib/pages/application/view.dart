@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:chatty/common/values/colors.dart';
+import '../message/view.dart';
 import 'index.dart';
 
 class ApplicationPage extends GetView<ApplicationController> {
@@ -16,9 +17,7 @@ class ApplicationPage extends GetView<ApplicationController> {
         controller: controller.pageController,
         onPageChanged: controller.handlePageChanged,
         children: [
-          Center(
-            child: Text("chat"),
-          ),
+          MessagePage(),
           ContactPage(),
           Center(
             child: Text("profile"),
