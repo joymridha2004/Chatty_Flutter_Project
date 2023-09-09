@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "401421682631",
+    "project_id": "chatty-b80ba",
+    "storage_bucket": "chatty-b80ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401421682631:android:257f506734dedee7173be2",
+        "android_client_info": {
+          "package_name": "com.example.chatty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401421682631-8joi9eqvm9ok6u4oif5uue210t9lf0hh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chatty",
+            "certificate_hash": "a79ef15fb3d7d06ccbc371351e45b22fedfb699d"
+          }
+        },
+        {
+          "client_id": "401421682631-ogjuogn1td7bf7h1lmgrt3a1fc1tro9m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAar-epp3HANmu9mQ3IZvClSgNdjlUyCtw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401421682631-bpsq1vc5rvkd8e3sc916hl0ck7beap1u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "401421682631-13jumoh39hvqfsu4l07kdf84i9ofqoki.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.chatty.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
