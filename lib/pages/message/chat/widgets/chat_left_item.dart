@@ -1,7 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:chatty/common/entities/entities.dart';
+import 'package:chatty/common/routes/names.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
 Widget ChatLeftItem(Msgcontent item) {
   return Container(
@@ -28,13 +30,17 @@ Widget ChatLeftItem(Msgcontent item) {
                 child: item.type == "text"
                     ? Text("${item.content}")
                     : ConstrainedBox(
-                  constraints: BoxConstraints(maxWidth: 120.w),
-                  child: GestureDetector(
-                    onTap: (){
-
-                    },child: CachedNetworkImage(imageUrl: "${item.content}",),
-                  ),
-                )))
+                        constraints: BoxConstraints(maxWidth: 120.w),
+                        child: GestureDetector(
+                          onTap: () {
+                            Get.toNamed(AppRoutes.Photoimgview,
+                                parameters: {"url": item.content ?? ""});
+                          },
+                          child: CachedNetworkImage(
+                            imageUrl: "${item.content}",
+                          ),
+                        ),
+                      )))
       ],
     ),
   );

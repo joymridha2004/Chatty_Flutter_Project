@@ -8,6 +8,8 @@ import 'package:chatty/pages/sign_in/index.dart';
 import 'package:chatty/pages/application/index.dart';
 import 'package:chatty/pages/contact/index.dart';
 import 'package:chatty/pages/message/chat/index.dart';
+import 'package:chatty/pages/message/photoview/index.dart';
+import 'package:chatty/pages/profile/index.dart';
 
 import 'routes.dart';
 
@@ -32,7 +34,7 @@ class AppPages {
     // check if needed to login or not
     GetPage(
       name: AppRoutes.Application,
-      page: () => ApplicationPage(),
+      page: () => const ApplicationPage(),
       binding: ApplicationBinding(),
       middlewares: [
         RouteAuthMiddleware(priority: 1),
@@ -43,17 +45,25 @@ class AppPages {
     // 首页
     GetPage(
         name: AppRoutes.Contact,
-        page: () => ContactPage(),
+        page: () => const ContactPage(),
         binding: ContactBinding()),
     /*
     //消息
     GetPage(name: AppRoutes.Message, page: () => MessagePage(), binding: MessageBinding()),
-    //我的
-    GetPage(name: AppRoutes.Me, page: () => MePage(), binding: MeBinding()),
+    //我的*/
+
+    GetPage(
+        name: AppRoutes.Me,
+        page: () => const ProfilePage(),
+        binding: ProfileBinding()),
     //聊天详情
-    */
-    GetPage(name: AppRoutes.Chat, page: () => ChatPage(), binding: ChatBinding()),
-    /*
-    GetPage(name: AppRoutes.Photoimgview, page: () => PhotoImgViewPage(), binding: PhotoImgViewBinding()),*/
+
+    GetPage(
+        name: AppRoutes.Chat, page: () => const ChatPage(), binding: ChatBinding()),
+
+    GetPage(
+        name: AppRoutes.Photoimgview,
+        page: () => const PhotoImageView(),
+        binding: PhotoImageViewBinding()),
   ];
 }

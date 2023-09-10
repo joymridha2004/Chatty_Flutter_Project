@@ -1,4 +1,5 @@
 import 'package:chatty/pages/contact/index.dart';
+import 'package:chatty/pages/profile/index.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -19,9 +20,7 @@ class ApplicationPage extends GetView<ApplicationController> {
         children: [
           MessagePage(),
           ContactPage(),
-          Center(
-            child: Text("profile"),
-          )
+          ProfilePage()
         ],
       );
     }
