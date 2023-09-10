@@ -15,7 +15,7 @@ Widget ChatLeftItem(Msgcontent item) {
             constraints: BoxConstraints(maxWidth: 230.w, minHeight: 40.w),
             child: Container(
                 margin: EdgeInsets.only(right: 10.w, top: 0.w),
-                padding: EdgeInsets.only(top: 10.w, left: 10.w, right: 10.w),
+                padding: EdgeInsets.only(top: 10.w, left: 10.w, right: 10.w,bottom: 10),
                 decoration: BoxDecoration(
                     gradient: const LinearGradient(
                       colors: [
